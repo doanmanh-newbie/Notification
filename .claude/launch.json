@@ -1,0 +1,28 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dev",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "pnpm@10.34.3",
+        "dev"
+      ],
+      "port": 8443
+    },
+    {
+      "name": "preview-build",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "pnpm@10.34.3",
+        "exec",
+        "vite",
+        "preview",
+        "--port",
+        "4174",
+        "--strictPort"
+      ],
+      "port": 4174
+    }
+  ]
+}

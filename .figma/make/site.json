@@ -1,0 +1,12 @@
+{
+  "description": "A personal productivity app that organizes tasks by priority, links related information, and adapts reminders to users’ needs and capacity.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  },
+  "title": "Nhắc Việc",
+  "language": "vi"
+}
