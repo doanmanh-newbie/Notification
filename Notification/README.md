@@ -1,2 +1,0 @@
-# Notification
-adr-web-window 
