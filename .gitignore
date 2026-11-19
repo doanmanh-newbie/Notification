@@ -1,0 +1,54 @@
+# =============================================================================
+# Công khai trên GitHub: code giao diện (src/, public/, index.html), script build
+# (scripts/), cấu hình build, và gói chạy sẵn release/*.zip (có NhacViec.exe).
+# Không công khai: backend, khoá bí mật, ghi chú nội bộ, file sinh ra khi build.
+# =============================================================================
+
+# ---- Khoá bí mật / cấu hình máy -------------------------------------------
+.env*
+!.env.example
+*.local.sql
+*.pem
+*.key
+
+# ---- Backend (Supabase: Edge Functions, migrations, SQL cài đặt) -----------
+/supabase/
+/scripts/bundle-functions.mjs
+
+# ---- Ghi chú nội bộ, kế hoạch, hướng dẫn vận hành -------------------------
+/docs/
+/AGENTS.md
+/CLAUDE.md
+
+# ---- Công cụ AI / IDE / nền tảng ------------------------------------------
+/.claude/
+/.superpowers/
+/.playwright-mcp/
+/.plugins/
+/.opencode-skills/
+/.figma/design-context/
+.claude-replay.*
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---- Sinh ra khi cài / build / chạy ---------------------------------------
+node_modules/
+dist/
+build/
+.cache/
+.vite/
+vite.config.*.timestamp-*
+*.tsbuildinfo
+*-debug.log*
+logs/
+*.log
+.tmp-*
+supabase/functions/.bundled/
+scripts/exe/lib/
+
+# ---- Bản phát hành: chỉ đưa 2 gói zip (exe + hướng dẫn) lên ---------------
+/release/*
+!/release/NhacViec.zip
+!/release/NhacViec-Offline.zip
